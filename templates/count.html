@@ -1,0 +1,12 @@
+<h1>Count</h1>
+<a href="{% url 'home' %}"> Start again </a>
+  <br/>
+{{fulltext}}
+<br>
+total words is equivalent to {{count}}
+
+<br/>
+{% for word,countotal in worddictionary%}
+{{word}}--{{countotal}}
+<br/>
+{% endfor %}
